@@ -1,0 +1,30 @@
+// Создаем XMLHttpRequest объект
+var xhr = new XMLHttpRequest();
+
+// Указываем путь к файлу JSON на сервере
+var url = "data.json";
+
+// Открываем соединение
+xhr.open("GET", url, true);
+
+// Устанавливаем заголовок для запроса
+xhr.setRequestHeader("Content-Type", "application/json");
+
+// Обработка события изменения состояния запроса
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        // Парсим JSON ответ
+        var data = JSON.parse(xhr.responseText);
+
+        // Выводим элементы из базы данных
+        for (var i = 0; i < data.length; i++) {
+            console.log(data[i].name);
+            console.log(data[i].age);
+            console.log(data[i].city);
+        }
+    }
+};
+
+// Отправляем запрос на сервер
+xhr.send();
+
