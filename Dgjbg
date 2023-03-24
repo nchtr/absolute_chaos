@@ -28,3 +28,79 @@ xhr.onreadystatechange = function() {
 // Отправляем запрос на сервер
 xhr.send();
 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Города и улицы</title>
+</head>
+<body>
+  <h1>Список городов и улиц</h1>
+  <ul id="city-list"></ul>
+
+  <script>
+    // Определяем базу данных городов и улиц в формате JSON
+    var cityData = {
+      "Москва": {
+        "улицы": [
+          "Тверская",
+          "Новый Арбат",
+          "Пресненская набережная"
+        ]
+      },
+      "Санкт-Петербург": {
+        "улицы": [
+          "Невский проспект",
+          "Большая Конюшенная улица",
+          "Малая Морская улица"
+        ]
+      },
+      "Киев": {
+        "улицы": [
+          "Хрещатик",
+          "Бессарабська площа",
+          "Гулливер"
+        ]
+      }
+    };
+
+    // Получаем ссылку на элемент <ul>, в который будем добавлять города и улицы
+    var cityList = document.getElementById("city-list");
+
+    // Перебираем все города в базе данных и добавляем их на страницу
+    for (var city in cityData) {
+      // Создаем новый элемент списка <li> для каждого города
+      var cityListItem = document.createElement("li");
+
+      // Добавляем название города как текстовый узел в элемент <li>
+      var cityTitle = document.createTextNode(city);
+      cityListItem.appendChild(cityTitle);
+
+      // Создаем новый элемент списка <ul> для улиц города
+      var streetList = document.createElement("ul");
+
+      // Перебираем все улицы в текущем городе и добавляем их на страницу
+      for (var i = 0; i < cityData[city]["улицы"].length; i++) {
+        // Создаем новый элемент списка <li> для каждой улицы
+        var streetListItem = document.createElement("li");
+
+        // Добавляем название улицы как текстовый узел в элемент <li>
+        var streetTitle = document.createTextNode(cityData[city]["улицы"][i]);
+        streetListItem.appendChild(streetTitle);
+
+        // Добавляем элемент <li> с названием улицы в список улиц города
+        streetList.appendChild(streetListItem);
+      }
+
+      // Добавляем список улиц города в элемент <li> с названием города
+      cityListItem.appendChild(streetList);
+
+      // Добавляем элемент <li> с названием города и списком улиц в список городов
+      cityList.appendChild(cityListItem);
+    }
+  </script>
+</body>
+</html>
+
+
