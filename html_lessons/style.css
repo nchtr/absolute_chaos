@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-image: none;
+    background-color: black;
+}
+
+div .zag { 
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    list-style-image: url();
+    list-style-position: inside;
+}
+
+#container {
+    margin:0 auto;
+    background-color: rgb(39, 19, 56);
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-content: stretch;
+}
+
+.block1 {
+    width: 30%;
+    height: 60%;
+    background-color: rgb(12, 22, 42);
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 8px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+.bpon {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(31, 27, 34);
+    color: white;
+    padding: 20px;
+    margin: 2%;
+    border-radius: 8px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+
+}
+.block2 {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(12, 22, 42);
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-content: stretch;
+    border-radius: 8px;
+}
+#cont {
+    margin:0 auto;
+    background-color: rgb(39, 19, 56);
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-content: stretch;
+    
+}
+.zag i {
+    font-size: 14px;
+}
+u {
+    color:gray;
+}
+#lt {text-align: end; overflow-y:scroll;}
+#ct {text-align: center;}
+#rt {text-align: start;}

@@ -1,0 +1,63 @@
+html {
+    display: block;
+}
+#blocks {
+    position: fixed;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 700px;
+    border: 1px solid aquamarine;
+    background: aquamarine;
+}
+#blocks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+div {
+    display:block;
+}
+#blocks a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+#blocks li {
+    list-style-type: none;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#blocks li:hover {
+	background-color: white;
+}
+#blocks li:hover a {
+	color: aquamarine;
+}
+img.right {
+    float: right;
+    width: 3%;
+    height: 3%;
+
+}
+img.left {
+    float: left;
+    width: 3%;
+    height: 3%;
+    background-size: contain;
+}

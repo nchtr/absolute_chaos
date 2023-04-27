@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body {height: 100%;}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(30,45,59);
+    display: flex;
+}
+
+.logo {
+    width: 300px;
+    height: 103%;
+    background-color: rgb(237,205,31);
+    padding: 20px;
+}
+
+.logo .firm {
+    display: flex;
+    height: 100%;
+    gap: 4%;
+    
+}
+
+.logo img {
+    height: 100%;
+}
+
+.logo .inter {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(30,45,59);
+}
+
+.logo a:first-child {
+    font-weight: 600;
+}
+
+.menu {
+    width: calc(100% - 301px);
+    height: 100%;
+}
+#blocks li {
+    list-style-type: none;
+    
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#blocks a {
+    padding: 10px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+#blocks ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    flex-wrap: wrap;
+    padding-top: 42px;
+    padding-right: 8%;
+    gap: 6%;
+    font-family:'Maven Pro', sans-serif;
+    font-size: small;
+}
+#blocks li:hover a {
+	color: rgb(237,205,31);
+    background-size: ;
+}

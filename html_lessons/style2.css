@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-05/1620852409_19-phonoteka_org-p-vektornii-fon-priroda-22.jpg
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* align-content: center; */
+    position: relative;
+    
+}
+img {
+    position: absolute;
+    width: 100px;
+}
+.girl {
+    top: 50%;
+    left: calc(50% - 50px);
+    z-index: 3;
+}
+.boy {
+    top: 50%;
+    left: calc(50% + 20px);
+    z-index: 2;
+    
+}
